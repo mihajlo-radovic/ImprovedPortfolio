@@ -1,0 +1,176 @@
+html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.skillset{
+    background-color: rgb(34, 0, 54);
+    min-height: 12vh;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 2px solid  rgb(191, 84, 253);
+}
+
+.web-development{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skillset-main-text{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.skillset-bottom-text{
+    opacity: 50%;
+}
+
+.skillset-devider{
+    min-height: 12vh;
+    border: 1px solid  rgb(191, 84, 253);
+}
+
+.android-development{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.work-section{
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: start;
+    margin-top: 3rem;
+}
+
+.first-project, .second-project, .third-project{
+    width: 50rem;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 1rem;
+}
+
+.first-project-image, .second-project-image, .third-project-image{
+    width: 100%;
+    max-width: 400px;
+    min-width: 400px;
+    border-radius: 0.5rem;
+}
+
+.first-project-text, .second-project-text, .third-project-text{
+    max-width: 40ch;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    align-self: flex-start;
+}
+
+.first-project-text:hover, .second-project-text:hover, .third-project-text:hover{
+    opacity: 70%;
+}
+
+.first-project-language, .second-project-language, .third-project-language{
+    border: 0.5rem solid rgb(191, 84, 253);
+    background-color: rgb(191, 84, 253);
+    border-radius: 1rem;
+}
+
+@media (max-width: 768px){
+    .skillset{
+        flex-direction: column;
+    }
+    .skillset-main-text{
+        font-size: 1.5rem;
+        padding-top: 0.5rem;
+    }
+
+    .skillset-bottom-text{
+        padding-bottom: 0.5rem;
+    }
+
+    .skillset-devider{
+        min-height: 0vh;
+        width: 99vw;
+    }
+
+    .work-section{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .first-project, .second-project, .third-project{
+        width: 25rem;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+
+    .first-project-image, .second-project-image, .third-project-image{
+        min-width: 300px;
+    }
+
+    .first-project-text, .second-project-text, .third-project-text{
+        max-width: 30ch;
+        padding-left: 0rem;
+        padding-top: 0rem;
+        align-self: flex-start;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1250px){
+    .skillset{
+        flex-direction: row;
+    }
+
+    .skillset-main-text{
+        font-size: 1.8rem;
+        padding-top: 0.5rem;
+    }
+
+    .skillset-bottom-text{
+        padding-bottom: 0.5rem;
+    }
+
+    .work-section{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .first-project, .second-project, .third-project{
+        width: 40rem;
+        flex-direction: row;
+        align-items: flex-start;
+        margin-bottom: 1rem;
+        gap: 1rem;
+    }
+
+    .first-project-image, .second-project-image, .third-project-image{
+        min-width: 300px;
+    }
+
+    .first-project-text, .second-project-text, .third-project-text{
+        max-width: 30ch;
+        padding-left: 0rem;
+        padding-top: 0rem;
+        align-self: flex-start;
+    }
+}
+
+/* JS */
+
+.skillset-tab {
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.project-hidden {
+    display: none;
+}

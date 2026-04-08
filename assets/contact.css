@@ -1,0 +1,83 @@
+html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-form{
+    margin-top: 5rem;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+input{
+    background-color: rgb(34, 0, 54);
+    color: white;
+    border: 2px solid  rgb(191, 84, 253);
+    width: 40rem;
+    height: 2.5rem;
+    padding-left: 1rem;
+    border-radius: 1rem;
+}
+
+.body {
+    background-color: rgb(34, 0, 54);
+    color: white;
+    border: 2px solid  rgb(191, 84, 253);
+    min-width: 40rem;
+    min-height: 10rem;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    border-radius: 1rem;
+}
+
+textarea {
+  resize: none;
+}
+
+.contact-button{
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.send-button {
+    background-color: rgb(191, 84, 253);
+    color: white;
+    width: 7rem;
+    height: 2.5rem;
+    border: 2px solid rgb(191, 84, 253);
+    border-radius: 0.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    padding: 0 0.5rem 0 0.75rem;
+}
+
+.send-button:hover{
+    opacity: 80%;
+}
+
+@media (max-width: 768px) {
+    input{
+        width: 25rem;
+    }
+
+    .body {
+        min-width: 25rem;
+        min-height: 7rem;
+    }
+}

@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="../assets/homepage.css" />
+    <link rel="stylesheet" href="../assets/projects.css" />
+    <link rel="icon" href="../images/logo32.png" type="image/png" />
+  </head>
+  <body>
+    <div class="parent">
+      <div class="header">
+        <a href="../html/HomePage.html">
+          <img src="../images/logo32.png" alt="Logo" class="logo" />
+        </a>
+        <div class="header-group">
+          <a href="../html/HomePage.html">Home</a>
+          <a href="../html/Projects.html">Projects</a>
+          <a href="../html/Contact.html">Contact</a>
+        </div>
+        <div class="header-spacer"></div>
+
+      </div>
+
+      <div class="content">
+        <div class="skillset">
+          <div class="web-development skillset-tab" data-filter="web">
+            <span class="skillset-main-text">Web development</span>
+            <span class="skillset-bottom-text">HTML, CSS</span>
+          </div>
+          <div class="skillset-devider"></div>
+          <div class="android-development skillset-tab" data-filter="android">
+            <span class="skillset-main-text">Android development</span>
+            <span class="skillset-bottom-text"
+              >Android Studio, Kotlin, XML</span
+            >
+          </div>
+        </div>
+
+        <div class="work-section">
+          <div class="first-project" data-category="web">
+            <img
+              src="../images/zadatak3.png"
+              alt="Card Notes"
+              class="first-project-image"
+            />
+            <a href="https://github.com/mihajlo-radovic/CSS-Intermediate-2" target="_blank">
+              <div class="first-project-text">
+                <h3>Web App</h3>
+                <p class="first-project-description">
+                  Grid view of card notes from people with different career paths
+                  and their experiences.
+                </p>
+                <span class="first-project-language">HTML</span>
+                <span class="first-project-language">CSS</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="second-project" data-category="android">
+            <img
+              src="../images/devices.png"
+              alt="List of devices"
+              class="second-project-image"
+            />
+            <a href="https://github.com/mihajlo-radovic/AndroidTV" target="_blank">
+              <div class="second-project-text">
+                <h3>Android TV App</h3>
+                <p class="second-project-description">
+                  Android TV App that displays list of available devices. The app
+                  is also capable of starting meetings using Jitsi framework.
+                </p>
+                <span class="second-project-language">Kotlin</span>
+                <span class="second-project-language">XML</span>
+              </div>
+            </a>
+          </div>
+
+          <div class="third-project" data-category="web">
+            <img
+              src="../images/oldportfolio.png"
+              alt="Old portfolio"
+              class="third-project-image"
+            />
+            <a href="https://github.com/mihajlo-radovic/Portfolio" target="_blank">
+              <div class="third-project-text">
+                <h3>Old Porftolio</h3>
+                <p class="third-project-description">
+                  Old version of my portfolio.
+                </p>
+                <span class="third-project-language">HTML</span>
+                <span class="third-project-language">CSS</span>
+                <span class="third-project-language">JavaScript</span>
+              </div>
+            </a>
+        </div>
+
+        <div class="top-scroll-button">
+          <a href="#top">
+            <button class="top-button">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <line x1="12" y1="19" x2="12" y2="5"></line>
+                <polyline points="5 12 12 5 19 12"></polyline>
+              </svg>
+            </button>
+          </a>
+        </div>
+
+      </div>
+
+      <div class="footer">
+        <div class="contacts">
+          <div class="contacts-header">
+            <span class="footer-header-text">Contact me</span>
+          </div>
+          <div class="contacts-main">
+            <a href="../html/Contact.html">
+              <span class="contacts-email">radovicmihajlo18@gmail.com</span>
+            </a>
+            <span class="contacts-number">+381 64 516 1614</span>
+          </div>
+        </div>
+        <div class="socials">
+          <div class="socials-header">
+            <span class="footer-header-text">Socials</span>
+          </div>
+          <div class="socials-main">
+            <a href="https://github.com/mihajlo-radovic" target="_blank">
+              <span class="socials-text">GitHub</span>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/mihajlo-radovi%C4%87-9530a8343/"
+              target="_blank"
+            >
+              <span class="socials-text">LinkedIn</span>
+            </a>
+            <a
+              href="https://www.instagram.com/mihajloradovic18/"
+              target="_blank"
+            >
+              <span class="socials-text">Instagram</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../js/HiddenProjects.js"></script>
+  </body>
+</html>
