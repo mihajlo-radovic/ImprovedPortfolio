@@ -5,13 +5,13 @@ html, body {
 }
 
 .skillset{
-    background-color: rgb(34, 0, 54);
+    background-color: var(--background-color);
     min-height: 12vh;
-    margin-top: 3rem;
+    margin-top: var(--spacing-large);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    border: 2px solid  rgb(191, 84, 253);
+    border: 2px solid  var(--primary-color);
 }
 
 .web-development{
@@ -21,7 +21,7 @@ html, body {
 }
 
 .skillset-main-text{
-    font-size: 2rem;
+    font-size: var(--font-size-big);
     font-weight: bold;
 }
 
@@ -31,7 +31,7 @@ html, body {
 
 .skillset-devider{
     min-height: 12vh;
-    border: 1px solid  rgb(191, 84, 253);
+    border: 1px solid  var(--primary-color);
 }
 
 .android-development{
@@ -47,7 +47,7 @@ html, body {
     width: 100%;
     align-items: center;
     justify-content: start;
-    margin-top: 3rem;
+    margin-top: var(--spacing-large);
 }
 
 .first-project, .second-project, .third-project{
@@ -55,20 +55,20 @@ html, body {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    padding: 1rem;
+    padding: var(--spacing-medium);
 }
 
 .first-project-image, .second-project-image, .third-project-image{
     width: 100%;
     max-width: 400px;
     min-width: 400px;
-    border-radius: 0.5rem;
+    border-radius: var(--spacing-small);
 }
 
 .first-project-text, .second-project-text, .third-project-text{
     max-width: 40ch;
-    padding-left: 1rem;
-    padding-top: 1rem;
+    padding-left: var(--spacing-medium);
+    padding-top: var(--spacing-medium);
     align-self: flex-start;
 }
 
@@ -77,9 +77,9 @@ html, body {
 }
 
 .first-project-language, .second-project-language, .third-project-language{
-    border: 0.5rem solid rgb(191, 84, 253);
-    background-color: rgb(191, 84, 253);
-    border-radius: 1rem;
+    border: var(--spacing-small) solid var(--primary-color);
+    background-color: var(--primary-color);
+    border-radius: var(--standard-border-radius);
 }
 
 @media (max-width: 768px){
@@ -87,12 +87,12 @@ html, body {
         flex-direction: column;
     }
     .skillset-main-text{
-        font-size: 1.5rem;
-        padding-top: 0.5rem;
+        font-size: var(--font-size-medium2);
+        padding-top: var(--spacing-small);
     }
 
     .skillset-bottom-text{
-        padding-bottom: 0.5rem;
+        padding-bottom: var(--spacing-small);
     }
 
     .skillset-devider{
@@ -110,7 +110,7 @@ html, body {
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
-        margin-bottom: 1rem;
+        margin-bottom: var(--spacing-medium);
     }
 
     .first-project-image, .second-project-image, .third-project-image{
@@ -131,12 +131,12 @@ html, body {
     }
 
     .skillset-main-text{
-        font-size: 1.8rem;
-        padding-top: 0.5rem;
+        font-size: var(--font-size-big);
+        padding-top: var(--spacing-small);
     }
 
     .skillset-bottom-text{
-        padding-bottom: 0.5rem;
+        padding-bottom: var(--spacing-small);
     }
 
     .work-section{
@@ -148,8 +148,8 @@ html, body {
         width: 40rem;
         flex-direction: row;
         align-items: flex-start;
-        margin-bottom: 1rem;
-        gap: 1rem;
+        margin-bottom: var(--spacing-medium);
+        gap: var(--spacing-medium);
     }
 
     .first-project-image, .second-project-image, .third-project-image{

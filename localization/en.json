@@ -1,0 +1,64 @@
+{
+    "header": {
+        "home": "Home",
+        "project": "Project",
+        "contact": "Contact"
+    },
+
+    "contentHomePage":{
+        "introductionText1": "It's never too late",
+        "introductionText2": "to start creating.",
+        "introductionBottomText": "Don't let your ideas remain ideas",
+
+        "introductionButton1": "Projects",
+        "introductionButton2": "Contact",
+        "introductionButton3": "See more",
+
+        "aboutMeHeader": "About me",
+        "aboutMeText": "My name is Mihajlo Radović, and I'm a Junior Developer who is about to graduate from the University of Sciences, from the field of Information Technologies. During my studies I gained a solid foundation in programming (Java, Web Development, Android Development) that helped me land an internship. At Infinitydev I got the chance to work on a real project with a team, which helped me deepen my knowledge and gain real work experience.",
+
+        "workExperienceText": "A summary of my previous work experiences:",
+        "firstWorkExperienceHeader": "Web Developer at Infinitydev",
+        "firstWorkExperienceDuration": "Mar 2026 - Present",
+        "firstWorkExperienceBody1":  "Improved skills in HTML",
+        "firstWorkExperienceBody2":  "Gained knowledge in CSS",
+        "firstWorkExperienceBody3":  "Learned JavaScript scripting language",
+        "firstWorkExperienceBody4":  "Daily Scrum meetings",
+
+        "secondWorkExperienceHeader": "Android TV Developer at Infinitydev",
+        "secondWorkExperienceDuration": "Feb 2026 - Mar 2026",
+        "secondWorkExperienceBody1":  "Gained experience in Android Studio",
+        "secondWorkExperienceBody2":  "Learned Kotlin programming language",
+        "secondWorkExperienceBody3":  "Improved skills in XML",
+        "secondWorkExperienceBody4":  "Daily Scrum meetings",
+
+        "workExperienceProjectsText": "Check out my projects",
+        "workExperienceProjectsButton": "Projects"
+    },
+
+    "contentProjects": {
+        "firstProjectText": "Web App",
+        "firstProjectDescription": "Grid view of card notes from people with different career paths and their experiences.",
+        
+        "secondProjectText": "Android TV App",
+        "secondProjectDescription": "Android TV App that displays list of available devices. The app is also capable of starting meetings using Jitsi framework.",
+
+        "thirdProjectText": "Old Porftolio",
+        "thirdProjectDescription": "Old version of my portfolio."
+    },
+
+    "contentContact":{
+        "contactFormHeader": "Email me",
+        "from": "From",
+        "cc": "CC",
+        "myEmail": "My E-mail",
+        "subject": "Subject",
+        "body": "Body",
+        "send": "Send"
+    },
+
+    "footer": {
+        "contactHeaderText": "Contact me",
+        "socialsHeader": "Socials"
+    }
+}

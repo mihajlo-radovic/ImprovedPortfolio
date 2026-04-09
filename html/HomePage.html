@@ -14,27 +14,29 @@
           <img src="../images/logo32.png" alt="Logo" class="logo" />
         </a>
         <div class="header-group">
-          <a href="../html/HomePage.html" class="home">Home</a>
-          <a href="../html/Projects.html" class="project">Projects</a>
-          <a href="../html/Contact.html" class="contact">Contact</a>
+          <a href="../html/HomePage.html" class="home" data-i18n="header.home">Home</a>
+          <a href="../html/Projects.html" class="project" data-i18n="header.project">Projects</a>
+          <a href="../html/Contact.html" class="contact" data-i18n="header.contact">Contact</a>
         </div>
-        <div class="header-spacer"></div>
+        <div class="languages">
+          <button class="lang-button" onclick="i18n.toggle()">SR / EN</button>
+        </div>
       </div>
 
       <div class="content">
         <div class="introduction-page">
-          <span class="introduction-text" style="color: rgb(180, 51, 255)"
+          <span class="introduction-text1" style="color: rgb(180, 51, 255)" data-i18n="contentHomePage.introductionText1"
             >It's never too late</span
           >
-          <span class="introduction-text">to start creating.</span>
-          <span class="introduction-bottom-text"
+          <span class="introduction-text2" data-i18n="contentHomePage.introductionText2">to start creating.</span>
+          <span class="introduction-bottom-text" data-i18n="contentHomePage.introductionBottomText"
             >Don't let your ideas remain ideas</span
           >
 
           <div class="introduction-buttons">
             <a href="../html/Projects.html"
-              ><button class="introduction-button">
-                Projects
+              ><button class="introduction-button1">
+                <span data-i18n="contentHomePage.introductionButton1">Projects</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="22"
@@ -51,8 +53,8 @@
               </button>
             </a>
             <a href="../html/Contact.html"
-              ><button class="introduction-button">
-                Contact
+              ><button class="introduction-button2">
+                <span data-i18n="contentHomePage.introductionButton2">Contact</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="22"
@@ -71,8 +73,8 @@
           </div>
           <div class="see-more-button">
             <a href="#about">
-              <button class="introduction-button">
-                See more
+              <button class="introduction-button3">
+                <span data-i18n="contentHomePage.introductionButton3">See more</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -112,8 +114,8 @@
         </div>
 
         <div class="about-me" id="about">
-          <span class="about-me-header">About me</span>
-          <p class="about-me-text">
+          <span class="about-me-header" data-i18n="contentHomePage.aboutMeHeader">About me</span>
+          <p class="about-me-text" data-i18n="contentHomePage.aboutMeText">
             My name is Mihajlo Radović, and I'm a Junior Developer who is about
             to graduate from the University of Sciences, from the field of
             Information Technologies. During my studies I gained a solid
@@ -125,47 +127,47 @@
         </div>
 
         <div class="work-experience">
-          <span class="work-experience-text"
+          <span class="work-experience-text" data-i18n="contentHomePage.workExperienceText"
             >A summary of my previous work experiences:</span
           >
 
           <div class="first-work-experience">
             <div class="first-work-experience-header">
-              <h3>Web Developer at Infinitydev</h3>
+              <h3 data-i18n="contentHomePage.firstWorkExperienceHeader">Web Developer at Infinitydev</h3>
             </div>
-            <p class="first-work-experience-duration">Mar 2026 - Present</p>
+            <p class="first-work-experience-duration" data-i18n="contentHomePage.firstWorkExperienceDuration">Mar 2026 - Present</p>
             <div class="first-work-experience-body">
               <ul>
-                <li>Improved skills in HTML</li>
-                <li>Gained knowledge in CSS</li>
-                <li>Learned JavaScript scripting language</li>
-                <li>Daily Scrum meetings</li>
+                <li data-i18n="contentHomePage.firstWorkExperienceBody1">Improved skills in HTML</li>
+                <li data-i18n="contentHomePage.firstWorkExperienceBody2">Gained knowledge in CSS</li>
+                <li data-i18n="contentHomePage.firstWorkExperienceBody3">Learned JavaScript scripting language</li>
+                <li data-i18n="contentHomePage.firstWorkExperienceBody4">Daily Scrum meetings</li>
               </ul>
             </div>
           </div>
 
           <div class="second-work-experience">
             <div class="second-work-experience-header">
-              <h3>Android TV Developer at Infinitydev</h3>
+              <h3 data-i18n="contentHomePage.secondWorkExperienceHeader">Android TV Developer at Infinitydev</h3>
             </div>
-            <p class="second-work-experience-duration">Feb 2026 - Mar 2026</p>
+            <p class="second-work-experience-duration" data-i18n="contentHomePage.secondWorkExperienceDuration">Feb 2026 - Mar 2026</p>
             <div class="second-work-experience-body">
               <ul>
-                <li>Gained experience in Android Studio</li>
-                <li>Learned Kotlin programming language</li>
-                <li>Improved skills in XML</li>
-                <li>Daily Scrum meetings</li>
+                <li data-i18n="contentHomePage.secondWorkExperienceBody1">Gained experience in Android Studio</li>
+                <li data-i18n="contentHomePage.secondWorkExperienceBody2">Learned Kotlin programming language</li>
+                <li data-i18n="contentHomePage.secondWorkExperienceBody3">Improved skills in XML</li>
+                <li data-i18n="contentHomePage.secondWorkExperienceBody4">Daily Scrum meetings</li>
               </ul>
             </div>
           </div>
 
           <div class="work-experience-projects">
-            <span class="work-experience-projects-text"
+            <span class="work-experience-projects-text" data-i18n="contentHomePage.workExperienceProjectsText"
               >Check out my projects</span
             >
             <a href="../html/Projects.html"
               ><button class="work-experience-projects-button">
-                Projects
+                <span data-i18n="contentHomePage.workExperienceProjectsButton">Projects</span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="22"
@@ -188,7 +190,7 @@
       <div class="footer">
         <div class="contacts">
           <div class="contacts-header">
-            <span class="footer-header-text">Contact me</span>
+            <span class="footer-header-text" data-i18n="footer.contactHeaderText">Contact me</span>
           </div>
           <div class="contacts-main">
             <a href="../html/Contact.html">
@@ -199,7 +201,7 @@
         </div>
         <div class="socials">
           <div class="socials-header">
-            <span class="footer-header-text">Socials</span>
+            <span class="footer-header-text" data-i18n="footer.socialsHeader">Socials</span>
           </div>
           <div class="socials-main">
             <a href="https://github.com/mihajlo-radovic" target="_blank">
@@ -221,5 +223,6 @@
         </div>
       </div>
     </div>
+    <script src="../js/i18n.js"></script>
   </body>
 </html>

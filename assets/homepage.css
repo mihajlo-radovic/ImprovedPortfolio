@@ -11,15 +11,48 @@ html {
 }
 
 body{
-    font-family: 'Manrope';
+    font-family: var(--main-font);
     font-weight: 400;
     background-color: rgb(0, 0, 0);
     color: white;
 }
 
+:root{
+    /* Colors */
+    --primary-color: rgb(191, 84, 253);
+    --background-color: rgb(34, 0, 54);
+    --secondary-color: rgb(180, 51, 255);
+
+    /* Font */
+    --main-font: 'Manrope';
+    --font-size-small: 1rem;
+    --font-size-medium: 1.2rem;
+    --font-size-medium2: 1.5rem;
+    --font-size-big: 2rem;
+    --font-size-large: 3rem;
+    --font-size-hero: 4rem;
+    --mobile-font-size-hero: 2.5rem;
+
+    /* Spacing */
+    --spacing-extra-small: 0.2rem;
+    --spacing-small: 0.5rem;
+    --spacing-small2: 0.75rem;
+    --spacing-medium: 1rem;
+    --spacing-medium2: 1.5rem;
+    --spacing-big: 2rem;
+    --spacing-large: 3rem;
+
+    /* Layout */
+    --standard-border-radius: 1rem;
+    --button-height: 2.5rem;
+
+    /* Transition */
+    --transition-medium: 500ms
+}
+
 * {
     scrollbar-width: thin;
-    scrollbar-color: rgb(162, 0, 255) rgb(34, 0, 54);
+    scrollbar-color: rgb(162, 0, 255) var(--background-color);
 }
 
 ::-webkit-scrollbar {
@@ -27,16 +60,16 @@ body{
 }
 
 ::-webkit-scrollbar-track {
-    background-color: rgb(34, 0, 54);
+    background-color: var(--background-color);
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: rgb(191, 84, 253);
-    border-radius: 1rem;
+    background-color: var(--primary-color);
+    border-radius: var(--standard-border-radius);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background-color: rgb(180, 51, 255);
+    background-color: var(--secondary-color);
 }
 
 a{
@@ -54,15 +87,15 @@ a{
 }
 
 .top-button{
-    background-color: rgb(191, 84, 253);
+    background-color: var(--primary-color);
     color: white;
-    width: 3rem;
-    height: 3rem;
+    width: var(--spacing-large);
+    height: var(--spacing-large);
     border: none;
     border-radius: 5rem;
     position: fixed;
-    bottom: 2rem;
-    right: 2rem;
+    bottom: var(--spacing-big);
+    right: var(--spacing-big);
     cursor: pointer;
 }
 
@@ -70,35 +103,58 @@ a{
     opacity: 90%;
 }
 
-.header{
-    background-color: rgb(191, 84, 253);
-    width: 100%;
+.header {
+    background-color: var(--primary-color);
     height: 4rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     position: sticky;
     top: 0;
     z-index: 100;
-    padding: 0 1rem;
+    padding: 0 var(--spacing-medium);
     box-sizing: border-box;
 }
 
-.header-group{
+.header-group {
     display: flex;
-    justify-content: center;
-    justify-self: center;
-    gap: 1rem;
-    border: 10px solid rgb(180, 51, 255);
-    background-color: rgb(180, 51, 255);
-    border-radius: 1rem;
-    padding: 0.2rem 0.8rem;
+    gap: var(--spacing-medium);
+    border: 10px solid var(--secondary-color);
+    background-color: var(--secondary-color);
+    border-radius: var(--standard-border-radius);
+    padding: var(--spacing-extra-small) 0.8rem;
 }
 
-.logo{
+.logo {
     position: absolute;
-    border-radius: 0.2rem;
-    top: 1rem;
+    left: var(--spacing-medium);
+    top: var(--spacing-medium);
+    border-radius: var(--spacing-extra-small);
+}
+
+.languages {
+    position: absolute;
+    right: var(--spacing-medium);
+    display: flex;
+    align-items: center;
+}
+
+.lang-button {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 0.5rem;
+    padding: 0.3rem 0.7rem;
+    cursor: pointer;
+    font-family: var(--main-font);
+    font-size: 0.85rem;
+    transition: var(--transition-medium);
+    white-space: nowrap;
+}
+
+.lang-button:hover {
+    background-color: white;
+    color: var(--primary-color);
 }
 
 .introduction-page{
@@ -110,8 +166,8 @@ a{
     flex-direction: column;
 }
 
-.introduction-text{
-    font-size: 4rem;
+.introduction-text1, .introduction-text2{
+    font-size: var(--font-size-hero);
     font-weight: bold;
 }
 
@@ -120,66 +176,66 @@ a{
 }
 
 .introduction-buttons{
-    margin-top: 1rem;
+    margin-top: var(--spacing-medium);
     display: flex;
-    gap: 1rem;
+    gap: var(--spacing-medium);
 }
 
-.introduction-button {
+.introduction-button1, .introduction-button2, .introduction-button3 {
     background-color: transparent;
-    color: rgb(191, 84, 253);
+    color: var(--primary-color);
     width: 7rem;
-    height: 2.5rem;
-    border: 2px solid rgb(191, 84, 253);
-    border-radius: 0.2rem;
+    height: var(--button-height);
+    border: 2px solid var(--primary-color);
+    border-radius: var(--spacing-extra-small);
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 2px;
-    padding: 0 0.5rem 0 0.75rem;
+    padding: 0 var(--spacing-small) 0 var(--spacing-small);
 }
 
 
-.introduction-button:hover{
+.introduction-button1:hover, .introduction-button2:hover, .introduction-button3:hover{
     opacity: 80%;
 }
 
 .see-more-button{
-    margin-top: 1rem;
+    margin-top: var(--spacing-medium);
 }
 
 #about {
-  scroll-margin-top: 80px;
+    scroll-margin-top: 80px;
 }
 
 .about-me{
-    background-color: rgb(34, 0, 54);
+    background-color: var(--background-color);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
-    border: 2px solid rgb(191, 84, 253);
-    border-radius: 1rem;
+    border: 2px solid var(--primary-color);
+    border-radius: var(--standard-border-radius);
     width: 70%;
     margin: 0 auto;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: var(--spacing-medium);
+    padding-right: var(--spacing-medium);
 }
 
 .about-me-header{
-    font-size: 3rem;
+    font-size: var(--font-size-large);
     font-weight: bold;
-    color: rgb(180, 51, 255);
+    color: var(--secondary-color);
 }
 
 .about-me-text{
-    font-size: 1.2rem;
+    font-size: var(--font-size-medium);
 }
 
 
 .work-experience{
-    margin-top: 3rem;
+    margin-top: var(--spacing-large);
     width: 100%;
     display: flex;
     align-items: center;
@@ -188,22 +244,22 @@ a{
 }
 
 .work-experience-text{
-    font-size: 3rem;
+    font-size: var(--font-size-large);
     font-weight: bold;
-    margin-bottom: 3rem;
+    margin-bottom: var(--spacing-large);
 }
 
 .first-work-experience{
-    background-color: rgb(34, 0, 54);
+    background-color: var(--background-color);
     width: 30%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     box-sizing: border-box;
-    padding: 1rem;
-    border-radius: 1rem;
-    margin-bottom: 1rem;
-    border: 2px solid rgb(191, 84, 253);
+    padding: var(--spacing-medium);
+    border-radius: var(--standard-border-radius);
+    margin-bottom: var(--spacing-medium);
+    border: 2px solid var(--primary-color);
 }
 
 .first-work-experience-header {
@@ -224,16 +280,16 @@ a{
 }
 
 .second-work-experience{
-    background-color: rgb(34, 0, 54);
+    background-color: var(--background-color);
     width: 30%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     box-sizing: border-box;
-    padding: 1rem;
-    border-radius: 1rem;
-    margin-bottom: 1rem;
-    border: 2px solid rgb(191, 84, 253);
+    padding: var(--spacing-medium);
+    border-radius: var(--standard-border-radius);
+    margin-bottom: var(--spacing-medium);
+    border: 2px solid var(--primary-color);
 }
 
 .second-work-experience-header {
@@ -256,25 +312,25 @@ a{
 .work-experience-projects {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: var(--spacing-medium);
 }
 .work-experience-projects-text{
-    font-size: 1.5rem;
-    margin-right: 1rem;
+    font-size: var(--font-size-medium2);
+    margin-right: var(--spacing-medium);
 }
 
 .work-experience-projects-button {
     background-color: transparent;
-    color: rgb(191, 84, 253);
+    color: var(--primary-color);
     width: 7rem;
-    height: 2.5rem;
-    border: 2px solid rgb(191, 84, 253);
-    border-radius: 0.2rem;
+    height: var(--button-height);
+    border: 2px solid var(--primary-color);
+    border-radius: var(--spacing-extra-small);
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 2px;
-    padding: 0 0.5rem 0 0.75rem;
+    padding: 0 var(--spacing-small) 0 var(--spacing-small);
 }
 
 .work-experience-projects-button:hover{
@@ -285,48 +341,48 @@ a{
     background-color: rgb(34, 0, 54);
     width: 100%;
     min-height: 30vh;
-    margin-top: 3rem;
-    border-top: 2px solid rgb(191, 84, 253);
+    margin-top: var(--spacing-large);
+    border-top: 2px solid var(--primary-color);
     display: flex;
     align-items: flex-start;
     justify-content: space-evenly;
     box-sizing: border-box;
-    padding-top: 2rem;
+    padding-top: var(--spacing-big);
 }
 
 .contacts-header{
-    margin-bottom: 2rem;
+    margin-bottom: var(--spacing-big);
 }
 
 .contacts-main{
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: var(--spacing-medium2);
 }
 
 .footer-header-text{
-    font-size: 2rem;
-    color: rgb(180, 51, 255);
+    font-size: var(--font-size-big);
+    color: var(--secondary-color)
 }
 
 .contacts-email:hover{
     opacity: 50%;
-    transition: 500ms;
+    transition: var(--transition-medium);
 }
 
 .socials-header{
-    margin-bottom: 2rem;
+    margin-bottom: var(--spacing-big);
 }
 
 .socials-main{
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: var(--spacing-medium2);
 }
 
 .socials-text:hover{
     opacity: 50%;
-    transition: 500ms;
+    transition: var(--transition-medium);
 }
 
 @media (max-width: 768px) {
@@ -335,12 +391,12 @@ a{
     }
 
     .logo {
-        border-radius: 0.2rem;
-        left: 1rem;
+        border-radius: var(--spacing-extra-small);
+        left: var(--spacing-medium);
     }
 
     .introduction-text {
-        font-size: 2.5rem;
+        font-size: var(--mobile-font-size-hero);
         text-align: center;
     }
 
@@ -354,14 +410,14 @@ a{
     }
 
     .about-me-header {
-        font-size: 2rem;
+        font-size: var(--font-size-big);
     }
 
     .about-me-text {
-        font-size: 1rem;
+        font-size: var(--font-size-small);
     }
     .work-experience-text{
-        font-size: 2rem;
+        font-size: var(--font-size-big);
         max-width: 20ch;
         text-align: center;
     }
@@ -374,11 +430,11 @@ a{
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 0.5rem;
+        gap: var(--spacing-small);
     }
 
     .work-experience-projects-text {
-        font-size: 1.2rem;
+        font-size: var(--font-size-medium);
         margin-right: 0;
     }
 
@@ -386,7 +442,7 @@ a{
         flex-direction: column;
         align-items: center;
         text-align: center;
-        gap: 2rem;
+        gap: var(--spacing-big);
     }
 
     .contacts-main, .socials-main {
@@ -394,7 +450,7 @@ a{
     }
 
     .socials-main{
-        margin-bottom: 2rem;
+        margin-bottom: var(--spacing-big);
     }
 }
 
@@ -404,7 +460,7 @@ a{
     }
 
     .work-experience-text{
-        font-size: 2rem;
+        font-size: var(--font-size-big);
         max-width: 20ch;
         text-align: center;
     }
@@ -416,11 +472,11 @@ a{
     .work-experience-projects {
         flex-direction: column;
         align-items: flex-start;
-        gap: 0.5rem;
+        gap: var(--spacing-small);
     }
 
     .work-experience-projects-text {
-        font-size: 1.2rem;
+        font-size:var(--font-size-medium);
         margin-right: 0;
     }
 
@@ -441,6 +497,6 @@ a{
     }
 
     .socials-main{
-        margin-bottom: 2rem;
+        margin-bottom: var(--spacing-big);
     }
 }

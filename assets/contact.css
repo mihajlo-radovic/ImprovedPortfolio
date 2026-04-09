@@ -19,52 +19,52 @@ html, body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
+    gap: var(--spacing-medium);
 }
 
 input{
-    background-color: rgb(34, 0, 54);
+    background-color: var(--background-color);
     color: white;
-    border: 2px solid  rgb(191, 84, 253);
+    border: 2px solid  var(--primary-color);
     width: 40rem;
-    height: 2.5rem;
-    padding-left: 1rem;
-    border-radius: 1rem;
+    height: var(--button-height);
+    padding-left: var(--spacing-medium);
+    border-radius: var(--standard-border-radius);
 }
 
 .body {
-    background-color: rgb(34, 0, 54);
+    background-color: var(--background-color);
     color: white;
-    border: 2px solid  rgb(191, 84, 253);
+    border: 2px solid  var(--primary-color);
     min-width: 40rem;
     min-height: 10rem;
-    padding-left: 1rem;
-    padding-top: 1rem;
-    border-radius: 1rem;
+    padding-left: var(--spacing-medium);
+    padding-top: var(--spacing-medium);
+    border-radius: var(--standard-border-radius);
 }
 
 textarea {
-  resize: none;
+    resize: none;
 }
 
 .contact-button{
-    margin-top: 2rem;
+    margin-top: var(--spacing-medium);
     display: flex;
-    gap: 1rem;
+    gap: var(--spacing-medium);
 }
 
 .send-button {
-    background-color: rgb(191, 84, 253);
+    background-color: var(--primary-color);
     color: white;
     width: 7rem;
-    height: 2.5rem;
-    border: 2px solid rgb(191, 84, 253);
-    border-radius: 0.2rem;
+    height: var(--button-height);
+    border: 2px solid var(--primary-color);
+    border-radius: var(--spacing-extra-small);
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 2px;
-    padding: 0 0.5rem 0 0.75rem;
+    padding: 0 var(--spacing-small) 0 var(--spacing-small);
 }
 
 .send-button:hover{
