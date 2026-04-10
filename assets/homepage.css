@@ -166,7 +166,7 @@ a{
     flex-direction: column;
 }
 
-.introduction-text1, .introduction-text2{
+.introduction-text{
     font-size: var(--font-size-hero);
     font-weight: bold;
 }
