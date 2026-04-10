@@ -181,7 +181,7 @@ a{
     gap: var(--spacing-medium);
 }
 
-.introduction-button1, .introduction-button2, .introduction-button3 {
+.introduction-button {
     background-color: transparent;
     color: var(--primary-color);
     width: 7rem;
@@ -196,7 +196,7 @@ a{
 }
 
 
-.introduction-button1:hover, .introduction-button2:hover, .introduction-button3:hover{
+.introduction-button:hover{
     opacity: 80%;
 }
 
