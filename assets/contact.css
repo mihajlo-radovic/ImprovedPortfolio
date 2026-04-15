@@ -80,4 +80,9 @@ textarea {
         min-width: 25rem;
         min-height: 7rem;
     }
+
+    .contact-form{
+        margin-left: var(--spacing-medium);
+        margin-right: var(--spacing-medium);
+    }
 }

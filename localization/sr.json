@@ -18,14 +18,14 @@
         "aboutMeText": "Moje ime je Mihajlo Radović, i ja sam Junior Developer koji uskoro diplomira sa Prirodno-Matematičkog Fakulteta, sa smera Informacione Tehnologije. Tokom studija stekao sam znanje za programiranje (Java, Web Development, Android Development), što mi je pomoglo da dobijem praksu. U Infinitzdev-u sam dobio priliku da radim na pravom projektu, što mi je pomoglo da unapredim znanje i steknem pravo radno iskustvo.",
 
         "workExperienceText": "Rezime mojih prethodnih radnih iskustva:",
-        "firstWorkExperienceHeader": "Web Developer u Infinitydev",
+        "firstWorkExperienceHeader": "Web Developer",
         "firstWorkExperienceDuration": "Mar 2026 - Do sada",
         "firstWorkExperienceBody1":  "Unapredio veštine u HTML-u",
         "firstWorkExperienceBody2":  "Unapredio znanje u CSS-u",
         "firstWorkExperienceBody3":  "Naučo JavaScript scripting jezol",
         "firstWorkExperienceBody4":  "Dnevni Scrum sastanci",
 
-        "secondWorkExperienceHeader": "Android TV Developer at Infinitydev",
+        "secondWorkExperienceHeader": "Android TV Developer",
         "secondWorkExperienceDuration": "Feb 2026 - Mar 2026",
         "secondWorkExperienceBody1":  "Unapredio veštine u Android Studio-u",
         "secondWorkExperienceBody2":  "Naučo Kotlin programski jezik",
@@ -37,6 +37,12 @@
     },
 
     "contentProjects": {
+        "iconTooltip1": "HTML - struktura web stranica",
+        "iconTooltip2": "CSS - stilizovanje i raspored",
+        "iconTooltip3": "JavaScript - interaktivnost ",
+        "iconTooltip4": "Android Studio - IDE za telefone",
+        "iconTooltip5": "Kotlin - Android programski jezik",
+
         "firstProjectText": "Web Aplikacija",
         "firstProjectDescription": "Mrežni prikaz sa beleškama od ljudi sa različitim karijerama i njihovim iskustvima.",
         

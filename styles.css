@@ -1,0 +1,34 @@
+:root{
+    /* Colors */
+    --primary-color: rgb(191, 84, 253);
+    --background-color: rgb(34, 0, 54);
+    --secondary-color: rgb(180, 51, 255);
+
+    /* Font */
+    --main-font: 'Manrope';
+    --font-size-small: 1rem;
+    --font-size-medium: 1.2rem;
+    --font-size-medium2: 1.5rem;
+    --font-size-big: 2rem;
+    --font-size-large: 3rem;
+    --font-size-hero: 4rem;
+    --mobile-font-size-hero: 2.5rem;
+
+    /* Spacing */
+    --spacing-extra-small: 0.2rem;
+    --spacing-small: 0.5rem;
+    --spacing-small2: 0.75rem;
+    --spacing-medium: 1rem;
+    --spacing-medium2: 1.5rem;
+    --spacing-big: 2rem;
+    --spacing-large: 3rem;
+
+    /* Layout */
+    --small-border-radius: 0.5rem;
+    --standard-border-radius: 1rem;
+    --button-height: 2.5rem;
+
+    /* Transition */
+    --transition-medium: 500ms;
+    --transition-fast: 200ms;
+}
