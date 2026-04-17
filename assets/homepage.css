@@ -142,6 +142,12 @@ a{
     flex-direction: column;
 }
 
+.introduction-purple-text{
+    font-size: var(--font-size-hero);
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
 .introduction-text{
     font-size: var(--font-size-hero);
     font-weight: bold;
@@ -317,6 +323,12 @@ a{
 .footer-header-text{
     font-size: var(--font-size-big);
     color: var(--secondary-color)
+}
+
+.contacts-email{
+    display: inline-flex; 
+    align-items: center; 
+    gap: 6px;
 }
 
 .contacts-email:hover{

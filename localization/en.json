@@ -54,12 +54,18 @@
     },
 
     "contentContact":{
+        "contactFormMainText": "Got a question?",
+        "contactFormText": "I'm here to help. Fill out the form or contact me via e-mail or phone. We'll be in touch as soon as possible:",
+        "contactFormSocials": "Reach out to me via social media:",
+
         "contactFormHeader": "Email me",
-        "from": "From",
-        "cc": "CC",
-        "myEmail": "My E-mail",
+        "firstName": "First Name",
+        "lastName": "Last Name",
+        "emailAddress": "Email Address",
+        "email": "your.email@gmail.com",
         "subject": "Subject",
         "body": "Body",
+        "bodyMain": "Tell me about your ideas...",
         "send": "Send"
     },
 

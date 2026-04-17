@@ -22,7 +22,7 @@
         "firstWorkExperienceDuration": "Mar 2026 - Do sada",
         "firstWorkExperienceBody1":  "Unapredio veštine u HTML-u",
         "firstWorkExperienceBody2":  "Unapredio znanje u CSS-u",
-        "firstWorkExperienceBody3":  "Naučo JavaScript scripting jezol",
+        "firstWorkExperienceBody3":  "Naučo JavaScript scripting jezik",
         "firstWorkExperienceBody4":  "Dnevni Scrum sastanci",
 
         "secondWorkExperienceHeader": "Android TV Developer",
@@ -54,12 +54,18 @@
     },
 
     "contentContact":{
-        "contactFormHeader": "Pošalji mi Email",
-        "from": "Od",
-        "cc": "CC",
-        "myEmail": "Moj E-mail",
+        "contactFormMainText": "Imate pitanje?",
+        "contactFormText": "Tu sam da pomognem. Popunite obrazac ili me kontakritajte putem e-maila ili telefona. Stupićemo u kontakt u najkraćem mogućem roku:",
+        "contactFormSocials": "Javite mi se putem društvenih mreža:",
+
+        "contactFormHeader": "Pošaljite mi Email",
+        "firstName": "Ime",
+        "lastName": "Prezime",
+        "emailAddress": "Email Adresa",
+        "email": "vas.mail@gmail.com",
         "subject": "Tema",
-        "body": "Telo",
+        "body": "Body",
+        "bodyMain": "Pišite mi vašim idejama...",
         "send": "Pošalji"
     },
 

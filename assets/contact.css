@@ -4,14 +4,33 @@ html, body {
     padding: 0;
 }
 
+.contact-section{
+    margin-top: 10rem;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: var(--spacing-large);
+    justify-content: center;
+}
+
+.contact-text{
+    display: flex;
+    flex-direction: column;
+    max-width: 35ch;
+    justify-content: start;
+    gap: var(--spacing-big);
+}
+
 .contact-form{
-    margin-top: 5rem;
-    min-height: 80vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-bottom: 5rem;
+}
+
+.contact-form-text{
+    color: var(--secondary-color);
 }
 
 .inputs{
@@ -22,11 +41,38 @@ html, body {
     gap: var(--spacing-medium);
 }
 
-input{
+.name-input{
+    display: flex;
+    gap: var(--spacing-small);
+}
+
+.other-inputs{
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-small);
+}
+
+.first-name-input, .last-name-input{
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-small);
+}
+
+.first-name, .last-name{
     background-color: var(--background-color);
     color: white;
     border: 2px solid  var(--primary-color);
-    width: 40rem;
+    width: 19rem;
+    height: var(--button-height);
+    padding-left: var(--spacing-medium);
+    border-radius: var(--standard-border-radius);
+}
+
+.input-body{
+    background-color: var(--background-color);
+    color: white;
+    border: 2px solid  var(--primary-color);
+    max-width: 40rem;
     height: var(--button-height);
     padding-left: var(--spacing-medium);
     border-radius: var(--standard-border-radius);
@@ -72,17 +118,53 @@ textarea {
 }
 
 @media (max-width: 768px) {
-    input{
-        width: 25rem;
+    .contact-section{
+        margin: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: var(--spacing-medium);
+    }
+
+    .contact-text{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .input-body{
+        width: 20rem;
     }
 
     .body {
-        min-width: 25rem;
+        min-width: 20rem;
         min-height: 7rem;
     }
 
+    .name-input{
+        flex-direction: column;
+    }
+
+    .first-name, .last-name{
+        width: 20rem;
+    }
+
     .contact-form{
-        margin-left: var(--spacing-medium);
-        margin-right: var(--spacing-medium);
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1250px) {
+    .contact-section{
+        margin: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: var(--spacing-medium);
+    }
+
+    .contact-text{
+        justify-content: center;
+        align-items: center;
     }
 }
